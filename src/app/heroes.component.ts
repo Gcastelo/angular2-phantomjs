@@ -2,6 +2,7 @@ import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Hero } from 'app/hero';
 import { HeroService } from 'app/hero.service';
+import { Address } from "app/address";
 
 
 @Component({
@@ -14,7 +15,8 @@ import { HeroService } from 'app/hero.service';
 export class HeroesComponent implements OnInit {
   hero: Hero = {
     id: 1,
-    name: 'Windstorm'
+    name: 'Windstorm',
+    addresses : Address[0]
   };
   heroes: Hero[];
   selectedHero: Hero;
